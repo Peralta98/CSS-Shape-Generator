@@ -1,0 +1,157 @@
+.container {
+    display: flex;
+    width: 100vw; /* Ocupa toda a largura da tela */
+    margin: 20px auto;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 600 !important;
+    text-align: center;
+   
+}
+
+
+.shape-style,
+.color-style,
+.border-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.shape-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.shape {
+    cursor: pointer;
+}
+
+
+.shape:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.active-shape {
+    border: 2px solid #8ca1af70; /* Cor da borda para indicar a seleção */
+}
+
+.controls, .preview {
+    flex: 0 0 50%; /* Cada coluna ocupa 50% da largura */
+    padding: 20px;
+}
+
+.shape-style {
+    line-height: 0px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.137);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.color-style {
+    line-height: 0px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.137);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.border-style {
+    line-height: 15px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.137);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.dimensions-style {
+    line-height: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.137);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+/* Regras para tornar os conteúdos da preview responsivos */
+.figure {
+    width: 100%; /* Ocupa toda a largura do container */
+    height: auto; /* Ajusta a altura automaticamente */
+    max-width: 100%; /* Largura máxima igual à largura do container */
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    margin: 0 auto; /* centralizar horizontalmente */
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* Botão Generate CSS responsivo */
+#generateCSS {
+    width: 100%; /* Ocupa toda a largura do container */
+    max-width: 200px; /* Largura máxima */
+    margin-top: 10px; /* Espaçamento superior */
+    display: inline-block; /* Permite centralizar horizontalmente */
+    margin: 20px auto; /* Margens automáticas para centralizar */
+}
+
+
+
+
+
+.preview {
+    position: relative; /* Defina a posição relativa no contêiner principal */
+    background-color: rgba(0, 0, 0, 0.137);
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden; 
+    text-align: center;
+   
+}
+
+
+
+
+
+
+
+
+
+.clickable {
+    cursor: pointer;
+}
+
+#colorPicker {
+    width: 25%;
+}
+
+#borderRadiusRange,
+#sizeRange
+ {
+    width: 40%;
+    
+}
+
+
+
+input {
+    cursor: pointer;
+  
+}

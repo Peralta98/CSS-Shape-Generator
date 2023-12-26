@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+
+    <title>Document</title>
+
+
+ 
+
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="controls">
+
+
+            <div class="shape-style">
+                <h4>Choose your shape:</h4>
+                <div class="shape-selection">
+                  
+                    <svg class="shape" id="square" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="#3498db" stroke-width="0" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    </svg>
+                    <svg class="shape" id="triangle" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="#3498db" stroke-width="0" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 2 21 22 21 12 2"></polygon>
+                    </svg>
+                    <svg class="shape" id="star" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="#3498db" stroke-width="0" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                    <svg class="shape" id="circle" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="#3498db" stroke-width="0" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                    </svg>
+                </div>
+                
+            </div>
+
+       
+       <div class="color-style">
+        <h4>Choose the color:</h4>
+        <input type="color" id="colorPicker" value="#3498db">
+    </div>
+
+
+
+    <div class="dimensions-style">
+        <h4 id="borderRadiusLabel" for="borderRadiusRange">Dimensions:</h4>
+        <input type="checkbox" id="maintainAspectRatioCheckbox" checked>
+   
+   <label for="maintainAspectRatioCheckbox">Maintain aspect ratio</label>
+    <label id="sizeLabel" for="sizeRange">Size: <span id="sizeValue">25</span>px</label>
+    <input type="range" id="sizeRange" value="50" min="25" max="500">
+
+    <div id="aspectRatioFields" class="row">
+        <label for="widthRange">Width: <span id="widthValue">25</span>px</label>
+        <input type="range" id="widthRange" value="50" min="25" max="500">
+        <label for="heightRange">Height: <span id="heightValue">25</span>px</label>
+        <input type="range" id="heightRange" value="50" min="25" max="500">
+    </div>
+ 
+</div>
+
+
+       <div class="border-style">
+        <h4 id="borderRadiusLabel" for="borderRadiusRange">Border Radius:</h4> 
+        <label id="borderLabel" for="borderRange"><span id="borderRadiusValue">0</span>%</label>
+        <input type="range" id="borderRadiusRange" min="0" value="0" max="45">
+       
+    </div>
+       
+  
+</div>
+
+      
+
+  
+       <div class="preview">
+        <h4>Preview:</h4>
+        <div class="figure" id="figure"></div>
+       
+      
+       
+       
+        <button id="generateCSS">Generate CSS</button>
+        <h6 id="message"></h6>
+         <pre class="clickable" id="cssCode"></pre>
+        
+
+  </div>
+
+
+
+ 
+
+    
+
+
+    
+
+
+
+
+</div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
